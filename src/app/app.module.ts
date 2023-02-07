@@ -12,7 +12,12 @@ import { WetherContentComponent } from './widget/wether-content.component';
 import { VelocityContentComponent } from './widget/velocity-content.component';
 
 @NgModule({
-  declarations: [AppComponent, WidgetComponent, WetherContentComponent, VelocityContentComponent],
+  declarations: [
+    AppComponent,
+    WidgetComponent,
+    WetherContentComponent,
+    VelocityContentComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

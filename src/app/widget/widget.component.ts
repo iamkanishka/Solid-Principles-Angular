@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { WidgetBase } from './widget-base';
 
 @Component({
   selector: 'app-widget',
   template: `
     <div class="header">
-      <h1>Weather</h1>
+      <h1>{{ title }}</h1>
       <button mat-stroked-button (click)="onExportJson()">
         Export as JSON
       </button>
@@ -31,8 +32,10 @@ import { Component } from '@angular/core';
     `,
   ],
 })
-export class WidgetComponent {
-  onExportJson() {
-    console.log('Export Json logic..');
+export class WidgetComponent extends WidgetBase {
+  onExportJson(): void {
+    super.onExportJson();
+    console.log('... aditional logic ...');
+    // ... but it should not break a contract with Base class
   }
 }
