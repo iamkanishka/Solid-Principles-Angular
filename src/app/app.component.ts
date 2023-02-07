@@ -7,7 +7,15 @@ import { Component } from '@angular/core';
       <span>My App</span>
     </mat-toolbar>
     <main class="content">
-      <app-widget></app-widget>
+      <app-widget>
+        <app-wether-content></app-wether-content>
+      </app-widget>
+      <app-widget>
+        <app-velocity-content></app-velocity-content>
+      </app-widget>
+      <app-widget>
+        <p>Content is comming...</p>
+      </app-widget>
     </main>
   `,
   styles: [
