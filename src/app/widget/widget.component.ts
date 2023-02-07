@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
 import { WidgetBase } from './widget-base';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-widget',
@@ -32,10 +32,4 @@ import { WidgetBase } from './widget-base';
     `,
   ],
 })
-export class WidgetComponent extends WidgetBase {
-  onExportJson(): void {
-    super.onExportJson();
-    console.log('... aditional logic ...');
-    // ... but it should not break a contract with Base class
-  }
-}
+export class WidgetComponent extends WidgetBase {}
