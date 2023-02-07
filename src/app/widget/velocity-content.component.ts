@@ -14,5 +14,5 @@ import { WidgetContent } from './widget-content';
   styleUrls: ['./widget-content.scss'],
 })
 export class VelocityContentComponent implements WidgetContent {
-  id: string = '';
+  id = 'random-string';
 }
